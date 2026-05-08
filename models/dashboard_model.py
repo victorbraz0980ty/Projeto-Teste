@@ -1,4 +1,4 @@
-class DashboardSQL:
+class DashboardModel:
     def __init__(self, conexao):
         self.conn = conexao
 

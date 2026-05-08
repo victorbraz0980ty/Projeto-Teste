@@ -1,8 +1,8 @@
-from models.dashboard_model import DashboardSQL
+from models.dashboard_model import DashboardModel
 
-class DashboardRegras:
+class DashboardController:
     def __init__(self, conexao):
-        self.modelo = DashboardSQL(conexao)
+        self.modelo = DashboardModel(conexao)
 
     def pegar_dados_resumo(self):
         clientes, pedidos, grana = self.modelo.obter_estatisticas()

@@ -1,8 +1,8 @@
-from models.cliente_model import ClienteSQL
+from models.cliente_model import ClienteModel
 
-class ClienteRegras:
+class ClienteController:
     def __init__(self, conexao):
-        self.modelo = ClienteSQL(conexao)
+        self.modelo = ClienteModel(conexao)
 
     def listar_clientes(self):
         return self.modelo.buscar_todos()

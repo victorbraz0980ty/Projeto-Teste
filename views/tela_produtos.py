@@ -1,11 +1,11 @@
 import customtkinter as ctk
 from tkinter import messagebox
 # Importa o Controller com o nome da Classe diferente do arquivo para evitar conflito
-from controllers.produto_controller import ProdutoRegras
+from controllers.produto_controller import ProdutoController
 
 def renderizar_produtos(main_frame, root, cores):
     # Instancia o controlador (que gerencia o ProdutoModel internamente)
-    ctrl = ProdutoRegras(root.conn)
+    ctrl = ProdutoController(root.conn)
 
     # Função idêntica à sua 'limpar_main', mas focada no frame recebido
     for widget in main_frame.winfo_children(): 

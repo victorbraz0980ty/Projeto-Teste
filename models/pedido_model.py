@@ -1,4 +1,4 @@
-class PedidoSQL:
+class PedidoModel:
     def __init__(self, conexao):
         self.conn = conexao
 

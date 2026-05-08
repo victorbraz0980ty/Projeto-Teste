@@ -1,8 +1,8 @@
-from models.produto_model import ProdutoSQL
+from models.produto_model import ProdutoModel
 
-class ProdutoRegras:
+class ProdutoController:
     def __init__(self, conexao):
-        self.modelo = ProdutoSQL(conexao)
+        self.modelo = ProdutoModel(conexao)
 
     def listar_para_view(self):
         return self.modelo.buscar_todos()

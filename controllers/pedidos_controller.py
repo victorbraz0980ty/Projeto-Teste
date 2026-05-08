@@ -1,8 +1,8 @@
-from models.pedido_model import PedidoSQL
+from models.pedido_model import PedidoModel
 
-class PedidosRegras:
+class PedidoController:
     def __init__(self, conexao):
-        self.modelo = PedidoSQL(conexao)
+        self.modelo = PedidoModel(conexao)
         self.conn = conexao
 
     def buscar_dados_auxiliares(self):

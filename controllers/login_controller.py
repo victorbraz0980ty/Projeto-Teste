@@ -1,8 +1,8 @@
-from models.login_model import LoginSQL
+from models.login_model import LoginModel
 
-class LoginRegras:
+class LoginController:
     def __init__(self, conexao):
-        self.modelo = LoginSQL(conexao)
+        self.modelo = LoginModel(conexao)
 
     def autenticar(self, email, senha):
         if not email or not senha:

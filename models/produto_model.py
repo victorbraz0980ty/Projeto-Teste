@@ -1,4 +1,4 @@
-class ProdutoSQL:
+class ProdutoModel:
     def __init__(self, conexao):
         self.conn = conexao
 

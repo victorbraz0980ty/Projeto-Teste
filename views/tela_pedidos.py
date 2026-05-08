@@ -1,9 +1,9 @@
 import customtkinter as ctk
 from tkinter import messagebox
-from controllers.pedidos_controller import PedidosRegras
+from controllers.pedidos_controller import PedidoController
 
 def renderizar_pedidos(main_frame, root, cores):
-    ctrl = PedidosRegras(root.conn)
+    ctrl = PedidoController(root.conn)
 
     for widget in main_frame.winfo_children(): widget.destroy()
 

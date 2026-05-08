@@ -1,4 +1,4 @@
-class ClienteSQL:
+class ClienteModel:
     def __init__(self, conexao):
         self.conn = conexao
 

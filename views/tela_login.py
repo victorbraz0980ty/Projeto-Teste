@@ -1,10 +1,10 @@
 import customtkinter as ctk
 from tkinter import messagebox
-from controllers.login_controller import LoginRegras
+from controllers.login_controller import LoginController
 
 def renderizar_login(root, callback_sucesso):
     # root aqui é a janela login_win instanciada no main
-    regras = LoginRegras(root.conn)
+    regras = LoginController(root.conn)
 
     # Cores fixas do seu design
     DARK, ORANGE, LIGHT_BG = "#0d1b2a", "#ff6b00", "#f5f6f8"

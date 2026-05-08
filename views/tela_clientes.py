@@ -1,6 +1,6 @@
 import customtkinter as ctk
 from tkinter import messagebox
-from controllers.cliente_controller import ClienteRegras
+from controllers.cliente_controller import ClienteController
 
 # IMPORTANTE: Importar todas as funções necessárias da pasta utils
 from utils.formatadores import (
@@ -12,7 +12,7 @@ from utils.formatadores import (
 
 def renderizar_clientes(main_frame, root, cores):
     # Instancia o controlador
-    ctrl = ClienteRegras(root.conn)
+    ctrl = ClienteController(root.conn)
 
     # Limpa o frame principal antes de desenhar
     for widget in main_frame.winfo_children(): 

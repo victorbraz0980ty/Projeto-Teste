@@ -1,8 +1,8 @@
 import customtkinter as ctk
-from controllers.dashboard_controller import DashboardRegras
+from controllers.dashboard_controller import DashboardController
 
 def renderizar_dashboard(main_frame, root, cores):
-    ctrl = DashboardRegras(root.conn)
+    ctrl = DashboardController(root.conn)
     dados = ctrl.pegar_dados_resumo()
 
     # Limpar tela
