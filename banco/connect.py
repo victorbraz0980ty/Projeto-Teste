@@ -10,7 +10,10 @@ def connect_to_database():
             host=os.getenv("DB_HOST"),
             user=os.getenv("DB_USER"),
             password=os.getenv("DB_PASSWORD"),
-            database=os.getenv("DB_NAME")
+            database=os.getenv("DB_NAME"),  
+            port= os.getenv("DB_PORT"),
+            ssl_disabled=False  
+
         )
         return connection
     except mysql.connector.Error as e:
@@ -19,4 +22,6 @@ def connect_to_database():
     
 con = connect_to_database()
 if con:
-     print("Conexão bem-sucedida!")
+     print("Conexão bem-sucedida!") 
+else:
+     print("Falha na conexão ao banco de dados.")
